@@ -1,15 +1,14 @@
 import * as os from 'node:os'
 
 import * as changeCase from 'change-case'
-import {XmlEntities as htmlEntities} from 'html-entities';
+import {decode} from 'html-entities';
 
 const log = console.log.bind(console)
 
 const DELIMITER = ':';
 
 var stripHTMLEntitites = function(rawData){
-	var entities = new htmlEntities();
-	return entities.decode(rawData);
+	return decode(rawData, { level: "xml" });
 }
 
 //Checks whether a delimiter followed by a space common in this result
