@@ -1,7 +1,9 @@
-const os = require('os'),
-	log = console.log.bind(console),
-	changeCase = require('change-case'),
-	htmlEntities = require('html-entities').XmlEntities;
+import * as os from 'node:os'
+
+import * as changeCase from 'change-case'
+import {XmlEntities as htmlEntities} from 'html-entities';
+
+const log = console.log.bind(console)
 
 const DELIMITER = ':';
 
