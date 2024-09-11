@@ -5,7 +5,7 @@ var util = require('util'),
 
 var lookup = util.promisify(whois.lookup);
 
-module.exports = async function(domain, options){
+export default async function(domain, options){
 
 	var rawData = await lookup(domain, options || {})	
 
