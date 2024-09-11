@@ -1,8 +1,9 @@
 {
   "name": "whois-json-arrays",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "whois, with actual JavaScript (not flat string) results (and arrays)!",
   "main": "index.js",
+	"type": "module",
   "scripts": {
     "test": "mocha"
   },
