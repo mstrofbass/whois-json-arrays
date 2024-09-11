@@ -1,8 +1,8 @@
-var util = require('util'),
-	whois = require('whois')
-	log = console.log.bind(console),
-	parseRawData = require('./parse-raw-data.js')
+import * as util from 'node:util'
+import whois from 'whois'
+import parseRawData from './parse-raw-data.js'
 
+const log = console.log.bind(console)
 var lookup = util.promisify(whois.lookup);
 
 export default async function(domain, options){
