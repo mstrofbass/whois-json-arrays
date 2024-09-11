@@ -63,4 +63,4 @@ var parseRawData = function(rawData) {
 	return result;
 }
 
-module.exports = parseRawData;
+export default parseRawData;
